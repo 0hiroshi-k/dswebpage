@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f2;
+  --foreground: #121212;
+  --panel: #ffffff;
+  --panel-soft: #f1f1ef;
+  --panel-strong: #111111;
+  --line: rgba(18, 18, 18, 0.12);
+  --muted: rgba(18, 18, 18, 0.7);
+  --yellow: #f5b301;
+  --yellow-soft: #ffd76d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-oswald);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(18, 18, 18, 0.06), transparent 24%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-oswald), Arial, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: rgba(245, 179, 1, 0.25);
+  color: #121212;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-oswald), Arial, sans-serif;
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-surface {
+    @apply rounded-[22px] border border-black/10 bg-white shadow-[0_18px_45px_rgba(15,15,15,0.06)] transition-all duration-300;
+  }
+
+  .hover-lift {
+    @apply transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(15,15,15,0.12)];
+  }
+
+  .brush-stroke {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  .brush-stroke::before {
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+    right: 0.2rem;
+    bottom: 0.12rem;
+    height: 0.6rem;
+    border-radius: 9999px;
+    background: linear-gradient(
+      90deg,
+      rgba(245, 179, 1, 0.7),
+      rgba(245, 179, 1, 0.9),
+      rgba(245, 179, 1, 0.7)
+    );
+    box-shadow: 0 0 10px rgba(245, 179, 1, 0.18);
+    transform: rotate(-1.5deg);
+    z-index: -1;
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
