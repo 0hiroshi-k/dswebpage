@@ -1,9 +1,9 @@
-import { MapPin, Phone } from "lucide-react";
-import { Facebook, Instagram, Video  } from "@deemlol/next-icons"
+import { Camera, MapPin, MessageCircle, Music2, Phone } from "lucide-react";
+
 const socials = [
-  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "TikTok", href: "https://tiktok.com", icon: Video },
+  { label: "Facebook", href: "https://facebook.com", icon: MessageCircle },
+  { label: "Instagram", href: "https://instagram.com", icon: Camera },
+  { label: "TikTok", href: "https://tiktok.com", icon: Music2 },
 ];
 
 export function ContactSection() {
