@@ -1,9 +1,35 @@
-import { Camera, MapPin, MessageCircle, Music2, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M13.5 22v-8h2.7l.4-3.1h-3.1V7.5c0-.9.3-1.5 1.6-1.5H17V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H8v3.1h2.3v8h3.2Z" />
+    </svg>
+  );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden="true">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M15.4 3.3c.6 1.4 1.7 2.4 3 2.9v2.8c-1.1 0-2.3-.3-3.3-.8v6.1c0 2.7-2.2 4.9-4.9 4.9s-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9c.3 0 .6 0 .9.1v2.9a2.8 2.8 0 0 0-.9-.1c-1.6 0-2.8 1.3-2.8 2.9s1.3 2.9 2.9 2.9 2.8-1.3 2.8-2.9V3.3h2.3Z" />
+    </svg>
+  );
+}
 
 const socials = [
-  { label: "Facebook", href: "https://facebook.com", icon: MessageCircle },
-  { label: "Instagram", href: "https://instagram.com", icon: Camera },
-  { label: "TikTok", href: "https://tiktok.com", icon: Music2 },
+  { label: "Facebook", href: "https://www.facebook.com/DSDAILYSHINE/", icon: FacebookIcon },
+  { label: "Instagram", href: "https://www.instagram.com/dsdailyshine/", icon: InstagramIcon },
+  { label: "TikTok", href: "https://www.tiktok.com/@daily.shine02", icon: TikTokIcon },
 ];
 
 export function ContactSection() {

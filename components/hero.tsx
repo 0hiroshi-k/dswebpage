@@ -54,12 +54,12 @@ export function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-5 right-3 flex items-center gap-3 rounded-full border border-black/10 bg-white/90 px-3 py-2.5 shadow-[0_18px_32px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:px-4 sm:py-3 md:right-10">
+          <div className="absolute -bottom-5 right-3 z-20 flex items-center gap-3 rounded-full border border-black/10 bg-white/95 px-3 py-2.5 shadow-[0_18px_32px_rgba(0,0,0,0.12)] backdrop-blur-sm sm:px-4 sm:py-3 md:right-10">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white sm:h-11 sm:w-11">
               <ShieldCheck className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
-              <div className="text-[0.52rem] font-bold uppercase tracking-[0.12em] text-black/60 sm:text-[0.58rem] sm:tracking-[0.14em]">
+              <div className="text-[0.52rem] font-bold uppercase tracking-[0.12em] text-black/70 sm:text-[0.58rem] sm:tracking-[0.14em]">
                 Gwarancja
               </div>
               <div className="text-[0.56rem] font-semibold uppercase tracking-[0.11em] text-black sm:text-[0.62rem] sm:tracking-[0.12em]">

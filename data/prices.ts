@@ -8,37 +8,37 @@ export const priceList: PriceItem[] = [
   {
     service: "Wymiana oleju i filtrów",
     description: "Serwis silnika z wymianą oleju, filtra oleju i filtra powietrza.",
-    price: "od 299 zł",
+    price: "od 120 zł",
   },
   {
     service: "Wymiana oleju – skrzynia biegów",
     description: "Wymiana oleju w automatycznej lub manualnej skrzyni biegów.",
-    price: "od 399 zł",
+    price: "od 180 zł",
   },
   {
     service: "Wymiana oleju – most / dyferencjał",
     description: "Kontrola i wymiana oleju w mechanizmach napędowych.",
-    price: "od 349 zł",
+    price: "od 150 zł",
   },
   {
     service: "Filtry – oleju, powietrza, paliwa, kabinowy",
     description: "Kompleksowa wymiana filtrów dopasowanych do modelu auta.",
-    price: "od 189 zł",
+    price: "od 40 zł",
   },
   {
     service: "Serwis klimatyzacji",
     description: "Odgrzybianie, odwadnianie, kontrola szczelności i ozonowanie.",
-    price: "od 329 zł",
+    price: "od 100 zł",
   },
   {
     service: "Geometria kół",
     description: "Zbieżność i rozbieżność z ustawieniem pod kąty i kontrolą zużycia opon.",
-    price: "od 259 zł",
+    price: "od 100 zł",
   },
   {
     service: "Diagnostyka komputerowa",
     description: "Skanowanie błędów i analiza stanu układów pojazdu.",
-    price: "od 149 zł",
+    price: "od 100 zł",
   },
   {
     service: "Konsultacja techniczna",

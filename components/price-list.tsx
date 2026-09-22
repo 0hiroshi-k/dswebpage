@@ -94,8 +94,9 @@ export function PriceList() {
                     </div>
                   </div>
 
-                  <button
-                    type="button"
+                  <a
+                    href="tel:+48794566787"
+                    aria-label="Rezerwuj usługę telefonicznie"
                     className={[
                       "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.62rem] font-bold uppercase tracking-[0.18em] transition",
                       featured
@@ -105,7 +106,7 @@ export function PriceList() {
                   >
                     Rezerwuj
                     <ArrowRight className="h-3.5 w-3.5" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.article>
